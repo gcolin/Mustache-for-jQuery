@@ -2,8 +2,9 @@
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script src="https://raw.github.com/janl/mustache.js/master/mustache.js"></script>
-	<script src="../jquery.mustache.js"></script>
-	<script>
+	<script src="https://raw.github.com/gcolin/Mustache-for-jQuery/master/jquery.mustache.js"></script>
+	<script type="text/javascript">
+	    //<![CDATA[
 		$(document).ready(function(){
 			//path for ajax template loading
 			$.mustachePath = "templates/";
@@ -14,6 +15,7 @@
 			//render the template
 			$("body").mustache("hello",{name:"Mustache"}).hide().fadeIn();
 		});
+		 // ]]>
 	</script>
 </head>
 <body></body>
